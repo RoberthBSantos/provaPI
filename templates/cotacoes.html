@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{%block title%} Lista de Contatos {%endblock%}
+{% block main %}
+    <h1>Lista de Contatos</h1>
+    <ul>
+        {% for cotacao in cotacoes %}
+
+            <li>{{ cotacao.valor}} </li>
+
+        {% endfor %}
+    </ul>
+
+    <br>
+
+
+
+
+{% endblock %}

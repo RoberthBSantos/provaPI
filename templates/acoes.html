@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{%block title%} Lista de Contatos {%endblock%}
+{% block main %}
+    <h1>Lista de Contatos</h1>
+    <ul>
+        {% for acao in acoes %}
+
+            <li>{{ acao.sigla}} <a href="{%url 'adicionar_cotacao' acao.id%}">Adicionar Cotação</a> </li>
+
+        {% endfor %}
+    </ul>
+
+    <br>
+
+
+
+
+{% endblock %}
